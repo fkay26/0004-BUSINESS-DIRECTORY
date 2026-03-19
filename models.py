@@ -1,3 +1,4 @@
+#Business class for storing business data
 from datetime import datetime
 
 class Business:
