@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Directory</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e8f5e9;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 60%;
+            text-align: center;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            background: green;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📋 Business Directory</h1>
+
+    <a href="/add">+ Add New Business</a>
+
+    <!-- Recently Added -->
+    <div class="section">
+        <h2>🆕 Recently Added</h2>
+        <ul>
+            {% for business in recent %}
+                <li>{{ business.display() }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- All Businesses -->
+    <div class="section">
+        <h2>📌 All Businesses</h2>
+        <ul>
+            {% for business in businesses %}
+                <li>{{ business.display() }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
