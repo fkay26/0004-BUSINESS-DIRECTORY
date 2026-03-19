@@ -1,7 +1,7 @@
 # Business Directory App
 
 ## Description
-This app allows users to add and view businesses.
+This app allows users to add and view recently added businesses and view a list of local businesses.
 
 ## Features
 - Add business
