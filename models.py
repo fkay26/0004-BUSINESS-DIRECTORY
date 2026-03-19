@@ -1,6 +1,6 @@
 #Business class for storing business data
 from datetime import datetime
-
+#using class as stated in the requirements
 class Business:
     def __init__(self, name, category):
         self.name = name
