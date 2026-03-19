@@ -5,6 +5,7 @@ from collections import deque
 
 app = Flask(__name__)
 
+#using Queue as stated in requirement
 # Queue (FIFO)
 business_queue = deque()
 
